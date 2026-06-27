@@ -1,20 +1,4 @@
-local Blacklist = {
-    [""] = true,
-    ["Player2"] = true,
-    ["Player3"] = true
-}
 
-game.Players.PlayerAdded:Connect(function(player)
-    if Blacklist[player.Name] then
-        player:Kick("Kêu oggy unban đi")
-    end
-end)
-
-for _, player in ipairs(game.Players:GetPlayers()) do
-    if Blacklist[player.Name] then
-        player:Kick("Kêu oggy unban đi ")
-    end
-end
 local Players = game:GetService("Players")
 local HttpService = game:GetService("HttpService")
 
