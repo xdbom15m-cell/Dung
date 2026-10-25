@@ -1,18 +1,27 @@
-local Players = game:GetService("Players")
-local HttpService = game:GetService("HttpService")
-local player = Players.LocalPlayer
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/cakukloj-lab/No/main/Orion_Orange_Transparent_09_Small.lua.txt"))()
-local Window = OrionLib:MakeWindow({
-    Name = "Dragon Blox V2.18⭐",
-    HidePremium = false,
-    SaveConfig = true,
-    ConfigFolder = "Config"
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+   Name = "Dragon Blox V2.18⭐",
+   Icon = 0,
+   LoadingTitle = "Dragon Blox",
+   LoadingSubtitle = "by xdbom15m",
+   ShowText = "Rayfield",
+   Theme = "Default",
+   ToggleUIKeybind = "K",
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false,
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = "DragonConfig",
+      FileName = "Big Hub"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink",
+      RememberJoins = true
+   },
+   KeySystem = false,
 })
-local Tab = Window:MakeTab({
-	Name = "Main",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+local Tab = Window:CreateTab("Main", 4483362458)
 })
 local Tab2 = Window:MakeTab({
 	Name = "Check",
