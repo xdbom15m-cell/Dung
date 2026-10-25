@@ -1,17 +1,14 @@
-
 local Players = game:GetService("Players")
 local HttpService = game:GetService("HttpService")
-
 local player = Players.LocalPlayer
-local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/cakukloj-lab/No/main/Orion_Orange_Transparent_09_Small.lua.txt"))()
 local Window = OrionLib:MakeWindow({
-	Name = "Dragon Blox V2.18⭐",
-	HidePremium = false,
-	SaveConfig = true,
-	ConfigFolder = "Config"
+    Name = "Dragon Blox V2.18⭐",
+    HidePremium = false,
+    SaveConfig = true,
+    ConfigFolder = "Config"
 })
-
 local Tab = Window:MakeTab({
 	Name = "Main",
 	Icon = "rbxassetid://4483345998",
